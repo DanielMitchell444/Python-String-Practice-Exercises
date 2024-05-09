@@ -85,6 +85,32 @@ Please type the code in the comment below.
 """
 
 """
+There is also negative indexing with strings. Negative slices can start the
+slice from the end of the string
+so essentially, lets create another string variable and show you
+"""
+
+string8 = "Hello World!"
+
+"""
+Using negative slices, we can get the values from -5 to -2 like so
+"""
+
+print(string8[-5:-2])
+
+"""
+This would start the from the end of the string and count backwards from it,
+so it would essentially get us orl. Negative indexing can be confusing
+but it is an essential tool to programming.
+"""
+
+"""
+PRACTICE:
+Create a variable named x with whatever text you want inside it, and then
+get the indexes -4 to -2 using the syntax listed above
+"""
+
+"""
 Another useful method is the replace method. Basically, the replace
 method replaces a string with another string. For example, lets
 say we have a string variable like so
@@ -154,3 +180,37 @@ After you do this, i want you to use the split method to turn the string variabl
 into a list. Then, i want you to print out the newly created list.
 """
 
+
+"""
+Len is another useful method to use with strings
+len is used to return the number of characters in a string
+the syntax is as follows
+"""
+
+x = len(string7)
+
+
+"""
+The return method is something that we haven't talked about yet, but
+it is essential in programming
+a return statement is used to end the execution of the function call and
+returns the results to the caller. Lets say we have a function named sayName,
+and we use the return statement to return hello and name, we could do this like
+so
+"""
+
+def sayName(name):
+    return "Hello" + name
+
+"""
+Essentially we are just passing the name variable as a parameter
+and then returning hello + whatever name argument the user decides to pass
+so, lets say we want to call this function, we could do this like so
+"""
+
+print(sayName("Daniel"))
+
+"""
+When we call a function, inside the parenthesis, we call that a function argument
+that is essentially what we are passing inside the sayName function.
+"""
